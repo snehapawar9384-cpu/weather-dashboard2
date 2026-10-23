@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-app">
+    <h1>🌤️ Weather Dashboard</h1>
+    <p>Check the weather in your city</p>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <p id="message"></p>
+
+    <section id="currentWeather" class="weather-card" hidden>
+      <h2 id="cityName"></h2>
+      <div id="weatherIcon" class="weather-icon"></div>
+      <h3 id="temperature"></h3>
+      <p id="description"></p>
+      <p id="details"></p>
+    </section>
+
+    <section id="forecastSection" hidden>
+      <h2>5-Day Forecast</h2>
+      <div id="forecast" class="forecast-grid"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
